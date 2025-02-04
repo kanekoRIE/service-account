@@ -1,0 +1,9 @@
+-- init.sql
+CREATE TABLE IF NOT EXISTS nasabah (
+    id SERIAL PRIMARY KEY,
+    nama VARCHAR(100),
+    nik VARCHAR(16) UNIQUE NOT NULL,
+    no_hp VARCHAR(15) UNIQUE NOT NULL,
+    no_rekening VARCHAR(15) UNIQUE NOT NULL,
+    saldo DECIMAL(10, 2) DEFAULT 0
+);
